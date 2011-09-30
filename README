@@ -1,0 +1,10 @@
+a two-hour project made at the end of 2011 spring hackNY
+
+dependencies:
+    web.py
+    flickrapi
+    twitter
+    scipy
+    PIL
+    redis
+
