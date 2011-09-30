@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=520, initial-scale=0.8, user-scalable=no" />
+        <title>Local Color</title>
+        <link type="text/css" rel="stylesheet" href="static/style.css" />
+        <script src="static/jquery.min.js"></script>
+        <!--
+            Hi all!
+            
+            Local Color is written in web.py, run by uWSGI and nginx.
+            
+            Redis is used for caching.
+            
+            The Flickr API provides the images from which colors
+            are extracted.
+
+            The Google Maps Static API provides the background image.
+            
+            Average colors are calculated with the Python Imaging Library.
+            
+            Future plans include using the Twitter, Panoramio, and other 
+            APIs and doing k-means magic with colors.
+
+            If you have questions or suggestions, don't hesitate to
+            contact me at h@qupt.net.
+        -->
+    </head>
+    <body>
+        <h1>LCL CLR</h1>
+        <ul class="results">
+            <li><span id="loading">ldng</span></li>
+        </ul>
+        <footer>
+            <p><a href="http://qupt.net">Contact</a>. LCL CLR uses data from <a href="http://flickr.com">Flickr</a>.<br />
+            <a href="http://twitter.com/share" class="twitter-share-button" data-text="I just found some local colors" data-url="http://lclclr.com" data-count="horizontal" data-via="lumilux" data-related="lumilux">Tweet</a></p>
+        </footer>
+        <script src="static/results.js"></script>
+        <script src="static/twitterWidgets.js"></script>
+    </body>
+</html>

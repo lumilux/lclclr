@@ -1,0 +1,201 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub,
+sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0;
+padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5
+display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header,
+hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; }
+blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: '';
+content: none; } table { border-collapse: collapse; border-spacing: 0; }
+
+html {
+	font-size: 28px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   	background-color: #eee;
+    padding: 0 0 10px 0;
+    height: 100%;
+}
+
+body {
+    width: 480px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+form, table, th, tr, td {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-spacing: 0;
+}
+
+label, th {
+	display: none;
+}
+
+table {
+	margin: 0 auto;
+}
+
+h1, h2 {
+    text-rendering: optimizeLegibility;
+    letter-spacing: -0.05em;
+	font-size: 2.24em;
+	text-align: center;
+	margin: 0px auto;
+	font-weight: bold;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 3px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 0px 3px rgba(0,0,0,.3),
+               0 1px 5px rgba(0,0,0,.2),
+               0 2px 10px rgba(0,0,0,.25),
+               0 5px 10px rgba(0,0,0,.2),
+               0 10px 20px rgba(0,0,0,.15);
+}
+
+h1 {
+    display: block;
+    width: 480px;
+    position: absolute;
+    top: 20px;
+    color: rgba(255, 255, 255, 1);
+}
+
+h2 {
+	font-size: 0.8em;
+	color: rgba(55, 55, 55, 1);
+}
+
+small {
+	color: #999;
+}
+
+ul.results {
+	width: 400px;
+	list-style-type: none;
+	margin: 110px auto 20px auto;
+	padding: 35px 40px;
+	text-align: center;
+	color: #111;
+    position: relative;
+    z-index: 1;
+    -webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+ul.results:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+    background-color: #fff;
+    opacity: 0.33;
+}
+
+ul.results:after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+    -webkit-box-shadow: inset #333 1px 1px 4px;
+    -moz-box-shadow:    inset #333 1px 1px 4px;
+    box-shadow:         inset #333 1px 1px 4px;
+}
+
+ul.results li {
+	padding: 5px 0;
+	margin: 0 auto;
+}
+
+a.color {
+    display: block;
+    width: 380px;
+    height: 30px;
+    opacity: 0.85;
+    -webkit-box-shadow: 1px 1px 3px #444;
+    -moz-box-shadow: 1px 1px 3px #444;
+    box-shadow: 1px 1px 3px #444;
+}
+
+ul.results li a {
+	border: 10px solid transparent;
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+ul.results li a:hover {
+	border: 10px solid #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+span#loading {
+    opacity: 0.7;
+    color: #bbb;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+	text-shadow: #eee 0px 2px 0px, #444 0px -1px 0px;
+}
+
+body a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer {
+    text-shadow: 1px 1px 0 rgba(32, 32, 32, 0.6), -1px -1px 0 rgba(128, 128, 128, 0.5);
+    color: #999;
+    font-weight: bold;
+    font-size: 12px;
+    -webkit-text-size-adjust: 120%;
+    margin: 0;
+    opacity: 0.6;
+}
+
+footer:hover {
+    opacity: 1.0;
+}
+
+footer a {
+    color: #ccc;
+    text-transform: uppercase;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer p {
+    line-height: 24px;
+}
+
+.twitter-share-button {
+    margin: 5px 0 3px 0;
+}
+
